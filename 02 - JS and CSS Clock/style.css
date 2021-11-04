@@ -1,0 +1,136 @@
+html {
+    background-image: url(./background.jpg);
+    background-size: cover;
+    font-family: 'monospace';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#time {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.clock {
+    width: 40rem;
+    height: 40rem;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 1rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.second-hand {
+    width: 50%;
+    height: 3px;
+    background-color: red;
+}
+
+.min-hand {
+    width: 37%;
+    top: 37%;
+    margin: 13%;
+    height: 6px;
+    background-color: black;
+}
+
+.hour-hand {
+    width: 30%;
+    top: 30%;
+    margin: 20%;
+    height: 6px;
+    background-color: black;
+}
+
+/* to display numbers of time */
+.line {
+    width: 5px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    transform-origin: 0 200px;
+}
+
+.line:nth-child(1) {transform: translateY(-150px)}
+.line:nth-child(2) {transform: translateY(-150px) rotateZ(calc(360deg / 12))}
+.line:nth-child(3) {transform: translateY(-150px) rotateZ(calc(2 * 360deg / 12))}
+.line:nth-child(4) {transform: translateY(-150px) rotateZ(calc(3 * 360deg / 12))}
+.line:nth-child(5) {transform: translateY(-150px) rotateZ(calc(4 * 360deg / 12))}
+.line:nth-child(6) {transform: translateY(-150px) rotateZ(calc(5 * 360deg / 12))}
+.line:nth-child(7) {transform: translateY(-150px) rotateZ(calc(6 * 360deg / 12))}
+.line:nth-child(8) {transform: translateY(-150px) rotateZ(calc(7 * 360deg / 12))}
+.line:nth-child(9) {transform: translateY(-150px) rotateZ(calc(8 * 360deg / 12))}
+.line:nth-child(10) {transform: translateY(-150px) rotateZ(calc(9 * 360deg / 12))}
+.line:nth-child(11) {transform: translateY(-150px) rotateZ(calc(10 * 360deg / 12))}
+.line:nth-child(12) {transform: translateY(-150px) rotateZ(calc(11 * 360deg / 12))}
+
+.line::after {
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 15px 0 0 -8px;
+}
+
+/* already rotated above so re-rotate */
+
+.line:nth-child(1)::after {content: '12'}
+
+.line:nth-child(2)::after {content: '1'; transform: rotateZ(calc(-360deg /12));}
+
+.line:nth-child(3)::after {content: '2'; transform: rotateZ(calc(-2 * 360deg / 12));}
+
+.line:nth-child(4)::after {content: '3'; transform: rotateZ(calc(-3 * 360deg / 12));}
+
+.line:nth-child(5)::after {content: '4'; transform: rotateZ(calc(-4 * 360deg / 12));}
+
+.line:nth-child(6)::after {content: '5'; transform: rotateZ(calc(-5 * 360deg / 12));}
+
+.line:nth-child(7)::after {content: '6'; transform: rotateZ(calc(-6 * 360deg / 12));}
+
+.line:nth-child(8)::after {content: '7'; transform: rotateZ(calc(-7 * 360deg / 12));}
+
+.line:nth-child(9)::after {content: '8'; transform: rotateZ(calc(-8 * 360deg / 12));}
+
+.line:nth-child(10)::after {content: '9'; transform: rotateZ(calc(-9 * 360deg / 12));}
+
+.line:nth-child(11)::after {content: '10'; transform: rotateZ(calc(-10 * 360deg / 12));}
+
+.line:nth-child(12)::after {content: '11'; transform: rotateZ(calc(-11 * 360deg / 12));}
+
+
+
