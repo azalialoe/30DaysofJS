@@ -1,4 +1,4 @@
-const setDate = () => {
+const setTime = () => {
     const secondHand = document.querySelector('.second-hand');
     const minuteHand = document.querySelector('.min-hand');
     const hourHand = document.querySelector('.hour-hand');
@@ -22,13 +22,34 @@ const setDate = () => {
         hourHand.style.transition = 'all 0s';
     }
     
+    
     const time = document.getElementById('time');
-    if (seconds < 10 ) {
+
+
+    if (seconds < 10 && mins < 10 ) {
+        time.innerHTML = `${hour}:0${mins}:0${seconds}`
+    } else if (seconds < 10 && mins > 10) {
         time.innerHTML = `${hour}:${mins}:0${seconds}`
+    } else if(seconds > 10 && mins < 10) {
+        time.innerHTML = `${hour}:0${mins}:${seconds}`
     } else {
         time.innerHTML = `${hour}:${mins}:${seconds}`
     }
 }
 
-setInterval(setDate, 1000);
+setInterval(setTime, 1000);
+
+const setDate = () => {
+
+    const current = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const today = new Intl.DateTimeFormat('en-US', options).format(current)
+
+    const todayDate = document.getElementById('todayDate')
+
+    todayDate.innerHTML = `${today}`
+
+}
+
+setDate();
 
