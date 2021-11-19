@@ -6,3 +6,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 3 - CSS Variables
 * Project 4 - JS Array Cardio (Array methods)
 * Project 5 - Flex Panels Gallery
+* Project 6 - Type Ahead(fetch, filter, a tiny bit of regex)
