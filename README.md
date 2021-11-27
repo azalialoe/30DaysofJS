@@ -8,3 +8,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 5 - Flex Panels Gallery
 * Project 6 - Type Ahead(fetch, filter, a tiny bit of regex)
 * Project 7 - Array Cardio 2(more array methods: find, some, every and findIndex)
+* Project 8 - Fun with HTML5 Canvas (simple HTML canvas to draw on)
