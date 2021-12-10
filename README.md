@@ -10,3 +10,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 7 - Array Cardio 2(more array methods: find, some, every and findIndex)
 * Project 8 - Fun with HTML5 Canvas (simple HTML canvas to draw on)
 * Project 9 - Dev Tools Domination (various consoles on dev tools)
+* Project 10 - Hold Shift and Check Checkboxes
