@@ -11,3 +11,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 8 - Fun with HTML5 Canvas (simple HTML canvas to draw on)
 * Project 9 - Dev Tools Domination (various consoles on dev tools)
 * Project 10 - Hold Shift and Check Checkboxes
+* Project 11 - Custom Video Player
