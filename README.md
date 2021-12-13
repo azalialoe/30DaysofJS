@@ -12,3 +12,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 9 - Dev Tools Domination (various consoles on dev tools)
 * Project 10 - Hold Shift and Check Checkboxes
 * Project 11 - Custom Video Player
+* Project 12 - Key Sequence Detection (secret code -> cornify)
