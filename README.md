@@ -13,3 +13,4 @@ From Wes Bos course [here](https://javascript30.com/).
 * Project 10 - Hold Shift and Check Checkboxes
 * Project 11 - Custom Video Player
 * Project 12 - Key Sequence Detection (secret code -> cornify)
+* Project 14 - Slide In on Scroll (slide in effect for images when scrolling page)
